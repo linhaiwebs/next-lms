@@ -14,7 +14,7 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <ClerkProvider dynamic afterSignOutUrl="/">
+    <ClerkProvider dynamic afterSignOutUrl="/sign-in">
       <html lang="en">
         <body className={inter.className}>
           <ConfettiProvider />

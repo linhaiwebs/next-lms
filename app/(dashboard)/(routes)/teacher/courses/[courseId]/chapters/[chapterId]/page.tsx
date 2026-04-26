@@ -25,7 +25,7 @@ const ChapterIdPage = async ({ params }: ChapterIdPageProps) => {
   const { userId } = await auth()
 
   if (!userId) {
-    return redirect('/')
+    return redirect('/sign-in')
   }
 
   const chapter = await db.chapter.findUnique({
@@ -39,7 +39,7 @@ const ChapterIdPage = async ({ params }: ChapterIdPageProps) => {
   })
 
   if (!chapter) {
-    return redirect('/')
+    return redirect('/sign-in')
   }
 
   const requiredFields = [chapter.title, chapter.description, chapter.videoUrl]

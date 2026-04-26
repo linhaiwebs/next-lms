@@ -25,7 +25,7 @@ const CourseIdPage = async ({ params }: CourseIdPageProps) => {
   const { userId } = await auth()
 
   if (!userId) {
-    return redirect('/')
+    return redirect('/sign-in')
   }
 
   const course = await db.course.findUnique({
@@ -34,7 +34,7 @@ const CourseIdPage = async ({ params }: CourseIdPageProps) => {
   })
 
   if (!course) {
-    return redirect('/')
+    return redirect('/sign-in')
   }
 
   const categories = await db.category.findMany({

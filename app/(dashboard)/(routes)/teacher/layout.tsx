@@ -5,7 +5,7 @@ import { isTeacher } from '@/lib/teacher'
 export default async function TeacherLayout({ children }: { children: React.ReactNode }) {
   const { userId } = await auth()
   if (!isTeacher(userId)) {
-    return redirect('/')
+    return redirect('/dashboard')
   }
 
   return <>{children}</>

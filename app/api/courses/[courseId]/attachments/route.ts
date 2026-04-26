@@ -3,12 +3,11 @@ import { NextRequest, NextResponse } from 'next/server'
 import { db } from '@/lib/db'
 import { isTeacher } from '@/lib/teacher'
 
-type Attachment = Promise<{
+type AttachmentParams = Promise<{
   courseId: string
-  attachmentId: string
 }>
 
-export async function POST(request: NextRequest, { params }: { params: Attachment }) {
+export async function POST(request: NextRequest, { params }: { params: AttachmentParams }) {
   const { courseId } = await params
   try {
     const { userId } = await auth()

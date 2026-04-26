@@ -20,7 +20,7 @@ const CourseIdPage = async ({ params }: { params: Promise<{ courseId: string }> 
   })
 
   if (!course) {
-    return redirect('/')
+    return redirect('/sign-in')
   }
 
   return redirect(`/courses/${course.id}/chapters/${course.chapters[0].id}`)

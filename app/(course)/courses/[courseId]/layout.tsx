@@ -13,7 +13,7 @@ type CourseLayoutProps = {
 export default async function CourseLayout({ children, params }: CourseLayoutProps) {
   const { userId } = await auth()
   if (!userId) {
-    return redirect('/')
+    return redirect('/sign-in')
   }
   const resolvedParams = await params
 
@@ -29,7 +29,7 @@ export default async function CourseLayout({ children, params }: CourseLayoutPro
   })
 
   if (!course) {
-    return redirect('/')
+    return redirect('/sign-in')
   }
 
   const progressCount = await getProgress(userId, course.id)

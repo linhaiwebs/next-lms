@@ -23,7 +23,7 @@ export default async function ChapterDetails({ params }: ChapterDetailsProps) {
   const resolvedParams = await params
   const { userId } = await auth()
   if (!userId) {
-    return redirect('/')
+    return redirect('/sign-in')
   }
 
   const { chapter, course, muxData, attachments, nextChapter, userProgress, purchase } = await getChapter({
@@ -32,7 +32,7 @@ export default async function ChapterDetails({ params }: ChapterDetailsProps) {
   })
 
   if (!chapter || !course) {
-    return redirect('/')
+    return redirect('/sign-in')
   }
 
   const isLocked = !chapter.isFree && !purchase
