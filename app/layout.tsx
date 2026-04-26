@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import './globals.css'
 import { ClerkProvider } from '@clerk/nextjs'
+import { jaJP } from '@clerk/localizations'
 import { ToastProvider } from '@/components/providers/toaster-provider'
 import { ConfettiProvider } from '@/components/providers'
 
@@ -12,10 +13,14 @@ export const metadata: Metadata = {
   description: 'LMS (Learning Management System)',
 }
 
+// @clerk/localizations type mismatch with @clerk/nextjs - runtime is compatible
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+const jaJPLocalization = jaJP as any
+
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <ClerkProvider dynamic afterSignOutUrl="/sign-in">
-      <html lang="en">
+    <ClerkProvider localization={jaJPLocalization} dynamic afterSignOutUrl="/sign-in">
+      <html lang="ja">
         <body className={inter.className}>
           <ConfettiProvider />
           <ToastProvider />
