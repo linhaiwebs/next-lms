@@ -19,7 +19,7 @@ const jaJPLocalization = jaJP as any
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <ClerkProvider localization={jaJPLocalization} dynamic afterSignOutUrl="/sign-in">
+    <ClerkProvider localization={jaJPLocalization} afterSignOutUrl="/sign-in">
       <html lang="ja">
         <body className={inter.className}>
           <ConfettiProvider />

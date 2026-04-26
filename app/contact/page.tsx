@@ -1,10 +1,6 @@
-import Link from 'next/link'
-import type { Metadata } from 'next'
+'use client'
 
-export const metadata: Metadata = {
-  title: 'お問い合わせ | Lumina Finance',
-  description: 'Lumina Financeへのお問い合わせ。ご質問やフィードバックをお待ちしております。',
-}
+import Link from 'next/link'
 
 export default function ContactPage() {
   return (
