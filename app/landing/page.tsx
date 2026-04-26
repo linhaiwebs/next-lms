@@ -2,8 +2,8 @@ import Link from 'next/link'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Lumina Finance - AI股票教育 | 免费开始学习',
-  description: '用AI重新定义股票教育。10,000+活跃学员的选择，机构级AI算法导师，系统化金融课程，从零基础到专业分析师。',
+  title: 'Lumina Finance - AI株式教育 | 無料で学習を始める',
+  description: 'AIで株式教育を再定義。10,000+のアクティブ受講者、機関レベルのAIアルゴリズムチューター、体系的な金融コース、ゼロからプロアナリストまで。',
 }
 
 export default function LandingPage() {
@@ -17,7 +17,7 @@ export default function LandingPage() {
             href="/sign-in"
             className="text-xs font-bold tracking-widest uppercase text-[#00E676] border border-[#00E676] px-4 py-1.5 rounded-full hover:bg-[#00E676]/10 transition-colors"
           >
-            登录
+            ログイン
           </Link>
         </div>
       </header>
@@ -27,28 +27,28 @@ export default function LandingPage() {
         <div className="absolute inset-0 bg-gradient-to-b from-[#00E676]/5 to-transparent pointer-events-none" />
         <div className="relative">
           <span className="inline-block font-manrope text-[10px] font-bold tracking-widest uppercase text-[#00E676] mb-4 bg-[#00E676]/10 px-3 py-1 rounded-full">
-            🤖 AI 驱动
+            🤖 AI搭載
           </span>
           <h1 className="text-3xl font-bold leading-tight mb-4">
-            用AI重新定义
+            AIで再定義する
             <br />
-            <span className="text-[#00E676]">股票教育</span>
+            <span className="text-[#00E676]">株式教育</span>
           </h1>
           <p className="text-base text-[#94A3B8] leading-relaxed mb-8">
-            机构级AI算法导师，系统化金融课程。从零基础到专业分析师，智能学习路径为你量身定制。
+            機関レベルのAIアルゴリズムチューター、体系的な金融コース。ゼロからプロアナリストまで、インテリジェント学習パスをカスタマイズ。
           </p>
           <div className="flex flex-col gap-3">
             <Link
               href="/sign-up"
               className="w-full text-center font-bold text-sm tracking-widest uppercase bg-gradient-to-r from-[#00E676] to-[#00C853] text-[#0e141a] py-3.5 rounded-full hover:opacity-90 transition-opacity"
             >
-              立即免费开始 →
+              今すぐ無料で始める →
             </Link>
             <Link
               href="/"
               className="w-full text-center text-sm text-[#94A3B8] py-2 hover:text-white transition-colors"
             >
-              了解更多
+              詳しく見る
             </Link>
           </div>
         </div>
@@ -61,7 +61,7 @@ export default function LandingPage() {
             <div className="flex items-center gap-2">
               <div className="w-2 h-2 rounded-full bg-[#00E676] animate-pulse" />
               <span className="font-manrope text-[10px] font-bold tracking-widest uppercase text-[#00E676]">
-                AI 实时分析
+                AIリアルタイム分析
               </span>
             </div>
           </div>
@@ -107,7 +107,7 @@ export default function LandingPage() {
                 <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" />
               </svg>
               <span className="text-xs text-[#00E676]">
-                AI检测到科技板块买入信号，波动性聚集指数上升
+                AIがテクノロジーセクターの買いシグナルを検出、ボラティリティ集積指数が上昇
               </span>
             </div>
           </div>
@@ -116,31 +116,31 @@ export default function LandingPage() {
 
       {/* Feature Highlights */}
       <section className="px-5 mb-12">
-        <h2 className="text-xl font-bold mb-6">为什么选择我们？</h2>
+        <h2 className="text-xl font-bold mb-6">なぜ選ぶのか？</h2>
         <div className="space-y-4">
           {[
             {
               icon: '🧠',
-              title: 'AI自适应学习',
-              desc: '算法根据您的理解程度动态调整课程难度和学习路径，确保最高效的学习体验。',
+              title: 'AIアダプティブラーニング',
+              desc: 'アルゴリズムがあなたの理解度に応じてコースの難易度と学習パスを動的に調整し、最も効率的な学習体験を提供。',
               color: '#00E676',
             },
             {
               icon: '📊',
-              title: '实时市场分析',
-              desc: '7×24小时AI监控全球金融市场，第一时间推送趋势变化和交易机会。',
+              title: 'リアルタイム市場分析',
+              desc: '24時間365日AIがグローバル金融市場を監視し、トレンド変化とトレード機会を即座に通知。',
               color: '#b0c6ff',
             },
             {
               icon: '🎯',
-              title: '系统化课程体系',
-              desc: '从基本面分析到量化策略，40+模块覆盖完整投资知识链。',
+              title: '体系的カリキュラム',
+              desc: 'ファンダメンタルズ分析からクオンツ戦略まで、40+モジュールで投資知識の全链条を網羅。',
               color: '#ffe37a',
             },
             {
               icon: '🔒',
-              title: '机构级安全',
-              desc: '银行级数据加密保护您的学习进度和投资策略，安全无忧。',
+              title: '機関レベルのセキュリティ',
+              desc: 'バンクレベルのデータ暗号化で学習進捗と投資戦略を保護し、安心してご利用いただけます。',
               color: '#ff8a80',
             },
           ].map((feature, i) => (
@@ -171,12 +171,12 @@ export default function LandingPage() {
             ))}
           </div>
           <div className="text-3xl font-bold mb-1">10,000+</div>
-          <div className="text-sm text-[#94A3B8] mb-4">活跃学员</div>
+          <div className="text-sm text-[#94A3B8] mb-4">アクティブ受講者</div>
           <div className="grid grid-cols-3 gap-4">
             {[
-              { num: '50+', label: 'AI课程' },
-              { num: '95%', label: '好评率' },
-              { num: '24/7', label: 'AI导师' },
+              { num: '50+', label: 'AIコース' },
+              { num: '95%', label: '満足度' },
+              { num: '24/7', label: 'AIチューター' },
             ].map((stat, i) => (
               <div key={i} className="text-center">
                 <div className="text-lg font-bold text-[#00E676]">{stat.num}</div>
@@ -191,15 +191,15 @@ export default function LandingPage() {
       <section className="px-5 mb-12">
         <div className="bg-[#1a2027] border-l-2 border-l-[#00E676] border-r border-t border-b border-r-white/5 border-t-white/5 border-b-white/5 rounded-r-xl p-5">
           <p className="text-sm text-[#dde3ec] leading-relaxed mb-4 italic">
-            &ldquo;Lumina的AI导师完全改变了我的学习方式。系统化的课程让我从投资新手成长为能独立分析市场的交易者。&rdquo;
+            &ldquo;LuminaのAIチューターが私の学習方法を完全に変えました。体系的なコースで投資の初心者から市場を独自に分析できるトレーダーに成長できました。&rdquo;
           </p>
           <div className="flex items-center gap-3">
             <div className="w-8 h-8 rounded-full bg-[#00E676]/20 flex items-center justify-center">
-              <span className="text-xs font-bold text-[#00E676]">YK</span>
+              <span className="text-xs font-bold text-[#00E676]">TY</span>
             </div>
             <div>
-              <div className="text-xs font-semibold">杨凯</div>
-              <div className="text-[10px] text-[#94A3B8]">专业分析师学员</div>
+              <div className="text-xs font-semibold">田中悠太</div>
+              <div className="text-[10px] text-[#94A3B8]">プロアナリスト受講生</div>
             </div>
           </div>
         </div>
@@ -207,21 +207,21 @@ export default function LandingPage() {
 
       {/* Pricing Quick Look */}
       <section className="px-5 mb-12">
-        <h2 className="text-xl font-bold mb-6">简单透明的定价</h2>
+        <h2 className="text-xl font-bold mb-6">シンプルで透明な料金</h2>
         <div className="bg-gradient-to-br from-[#1a2027] to-[#0e141a] border border-[#00E676]/30 rounded-2xl p-6 relative overflow-hidden">
           <div className="absolute top-0 right-0 bg-[#00E676] text-[#0e141a] text-[10px] font-bold tracking-widest uppercase px-3 py-1 rounded-bl-lg">
-            最受欢迎
+            人気No.1
           </div>
           <div className="mb-4">
-            <h3 className="text-lg font-semibold mb-1">专业分析师</h3>
-            <p className="text-xs text-[#94A3B8]">全功能访问 · AI驱动</p>
+            <h3 className="text-lg font-semibold mb-1">プロアナリスト</h3>
+            <p className="text-xs text-[#94A3B8]">全機能アクセス ・ AI搭載</p>
           </div>
           <div className="mb-6">
             <span className="text-4xl font-bold text-[#00E676]">$85</span>
             <span className="text-sm text-[#94A3B8]">/月</span>
           </div>
           <ul className="space-y-3 mb-6">
-            {['AI股票分析引擎', '40+模块全访问', '月度实盘策略直播', '估值建模模板'].map((item, i) => (
+            {['AI株式分析エンジン', '40+モジュール全アクセス', '月次リアルトレード戦略ライブ', 'バリュエーションモデリングテンプレート'].map((item, i) => (
               <li key={i} className="flex items-center gap-2">
                 <svg className="w-4 h-4 text-[#00E676] flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
@@ -234,28 +234,28 @@ export default function LandingPage() {
             href="/sign-up"
             className="block w-full text-center font-bold text-sm tracking-widest uppercase bg-gradient-to-r from-[#00E676] to-[#00C853] text-[#0e141a] py-3.5 rounded-full hover:opacity-90 transition-opacity"
           >
-            立即升级专业版 →
+            プロ版にアップグレード →
           </Link>
-          <p className="text-center text-[10px] text-[#94A3B8] mt-3">7天免费试用 · 随时取消</p>
+          <p className="text-center text-[10px] text-[#94A3B8] mt-3">7日間無料トライアル ・ いつでもキャンセル可</p>
         </div>
       </section>
 
       {/* Final CTA */}
       <section className="px-5 pb-16">
         <div className="bg-gradient-to-br from-[#00E676]/10 to-[#0e141a] border border-[#00E676]/20 rounded-2xl p-8 text-center">
-          <h2 className="text-2xl font-bold mb-3">准备好开始了吗？</h2>
+          <h2 className="text-2xl font-bold mb-3">始める準備はできましたか？</h2>
           <p className="text-sm text-[#94A3B8] mb-6">
-            加入10,000+投资者，用AI重新定义您的金融教育之旅。
+            10,000+の投資家に加入し、AIで金融教育の旅を再定義しましょう。
           </p>
           <Link
             href="/sign-up"
             className="inline-block font-bold text-sm tracking-widest uppercase bg-gradient-to-r from-[#00E676] to-[#00C853] text-[#0e141a] px-10 py-3.5 rounded-full hover:opacity-90 transition-opacity"
           >
-            免费开始学习 →
+            無料で学習を始める →
           </Link>
           <div className="mt-4">
             <Link href="/sign-in" className="text-xs text-[#94A3B8] hover:text-white transition-colors">
-              已有账户？立即登录 →
+              アカウントをお持ちですか？今すぐログイン →
             </Link>
           </div>
         </div>
@@ -265,12 +265,12 @@ export default function LandingPage() {
       <footer className="border-t border-white/5 px-5 py-8">
         <div className="flex justify-between items-center">
           <span className="text-sm font-bold tracking-widest text-[#00E676]">LUMINA</span>
-          <span className="text-[10px] text-[#94A3B8]">© 2024 Lumina Financial</span>
+          <span className="text-[10px] text-[#94A3B8]">© 2025 Lumina Finance</span>
         </div>
         <div className="flex justify-center gap-6 mt-4">
-          <a href="#" className="text-xs text-[#94A3B8] hover:text-[#00E676] transition-colors">隐私政策</a>
-          <a href="#" className="text-xs text-[#94A3B8] hover:text-[#00E676] transition-colors">服务条款</a>
-          <a href="#" className="text-xs text-[#94A3B8] hover:text-[#00E676] transition-colors">联系我们</a>
+          <Link href="/privacy" className="text-xs text-[#94A3B8] hover:text-[#00E676] transition-colors">プライバシーポリシー</Link>
+          <Link href="/terms" className="text-xs text-[#94A3B8] hover:text-[#00E676] transition-colors">利用規約</Link>
+          <Link href="/contact" className="text-xs text-[#94A3B8] hover:text-[#00E676] transition-colors">お問い合わせ</Link>
         </div>
       </footer>
     </div>
