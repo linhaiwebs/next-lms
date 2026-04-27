@@ -1,27 +1,16 @@
 import Link from 'next/link'
+import { PublicHeader, PublicFooter } from '@/components/public'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'プライバシーポリシー | Lumina Finance',
-  description: 'Lumina Financeのプライバシーポリシー。お客様の個人情報の取り扱いについてご説明します。',
+  title: 'プライバシーポリシー | ウド知恵',
+  description: 'ウド知恵のプライバシーポリシー。お客様の個人情報の取り扱いについてご説明します。',
 }
 
 export default function PrivacyPage() {
   return (
     <div className="min-h-screen bg-[#f8f9fa] text-[#191c1d] font-sans antialiased">
-      <header className="sticky top-0 z-50 w-full bg-[#F8F9FA] border-b border-[#E1E4E8]">
-        <div className="flex justify-between items-center max-w-[800px] mx-auto w-full px-6 py-4">
-          <Link href="/" className="text-xl font-bold tracking-widest text-[#1A2B3C]">
-            LUMINA FINANCE
-          </Link>
-          <Link
-            href="/sign-in"
-            className="font-serif font-medium tracking-tight text-[#1A2B3C] hover:text-[#008080] transition-colors duration-300"
-          >
-            ログイン
-          </Link>
-        </div>
-      </header>
+      <PublicHeader />
 
       <main className="max-w-[800px] mx-auto px-6 py-12 md:py-16">
         <h1 className="font-serif text-3xl md:text-4xl font-bold tracking-tight text-[#191c1d] mb-8">
@@ -33,7 +22,7 @@ export default function PrivacyPage() {
           <section>
             <h2 className="font-serif text-xl font-semibold text-[#191c1d] mb-3">1. はじめに</h2>
             <p>
-              Lumina Finance（以下「当社」）は、お客様のプライバシーを尊重し、個人情報の保護に努めています。
+              ウド知恵（以下「当社」）は、お客様のプライバシーを尊重し、個人情報の保護に努めています。
               本プライバシーポリシーは、当社が収集する個人情報の種類、その利用目的、および保護措置について説明します。
               本サービスをご利用いただくことで、本ポリシーに同意したものとみなされます。
             </p>
@@ -125,11 +114,7 @@ export default function PrivacyPage() {
         </div>
       </main>
 
-      <footer className="bg-[#1A2B3C] border-t border-[#2D3748]">
-        <div className="max-w-[800px] mx-auto px-6 py-8 text-center">
-          <div className="text-xs text-[#94A3B8]">© 2025 Lumina Finance. All rights reserved.</div>
-        </div>
-      </footer>
+      <PublicFooter />
     </div>
   )
 }

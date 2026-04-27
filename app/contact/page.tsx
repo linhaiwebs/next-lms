@@ -1,23 +1,12 @@
 'use client'
 
 import Link from 'next/link'
+import { PublicHeader, PublicFooter } from '@/components/public'
 
 export default function ContactPage() {
   return (
     <div className="min-h-screen bg-[#f8f9fa] text-[#191c1d] font-sans antialiased">
-      <header className="sticky top-0 z-50 w-full bg-[#F8F9FA] border-b border-[#E1E4E8]">
-        <div className="flex justify-between items-center max-w-[800px] mx-auto w-full px-6 py-4">
-          <Link href="/" className="text-xl font-bold tracking-widest text-[#1A2B3C]">
-            LUMINA FINANCE
-          </Link>
-          <Link
-            href="/sign-in"
-            className="font-serif font-medium tracking-tight text-[#1A2B3C] hover:text-[#008080] transition-colors duration-300"
-          >
-            ログイン
-          </Link>
-        </div>
-      </header>
+      <PublicHeader />
 
       <main className="max-w-[800px] mx-auto px-6 py-12 md:py-16">
         <h1 className="font-serif text-3xl md:text-4xl font-bold tracking-tight text-[#191c1d] mb-4">
@@ -36,7 +25,7 @@ export default function ContactPage() {
             </div>
             <h3 className="font-serif text-lg font-semibold text-[#191c1d] mb-2">メール</h3>
             <p className="text-sm text-[#44474c] mb-3">一般的なお問い合わせ</p>
-            <span className="text-sm text-[#006a6a] font-medium">support@luminafinance.com</span>
+            <span className="text-sm text-[#006a6a] font-medium">support@udochie.jp</span>
           </div>
 
           <div className="bg-white border border-[#c4c6cd] rounded-lg p-6 hover:border-[#006a6a] transition-colors">
@@ -47,7 +36,7 @@ export default function ContactPage() {
             </div>
             <h3 className="font-serif text-lg font-semibold text-[#191c1d] mb-2">パートナーシップ</h3>
             <p className="text-sm text-[#44474c] mb-3">企業・機関向けのお問い合わせ</p>
-            <span className="text-sm text-[#006a6a] font-medium">partnership@luminafinance.com</span>
+            <span className="text-sm text-[#006a6a] font-medium">partnership@udochie.jp</span>
           </div>
         </div>
 
@@ -106,11 +95,7 @@ export default function ContactPage() {
         </div>
       </main>
 
-      <footer className="bg-[#1A2B3C] border-t border-[#2D3748]">
-        <div className="max-w-[800px] mx-auto px-6 py-8 text-center">
-          <div className="text-xs text-[#94A3B8]">© 2025 Lumina Finance. All rights reserved.</div>
-        </div>
-      </footer>
+      <PublicFooter />
     </div>
   )
 }

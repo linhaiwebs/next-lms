@@ -1,27 +1,16 @@
 import Link from 'next/link'
+import { PublicHeader, PublicFooter } from '@/components/public'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: '利用規約 | Lumina Finance',
-  description: 'Lumina Financeの利用規約。サービスのご利用条件についてご説明します。',
+  title: '利用規約 | ウド知恵',
+  description: 'ウド知恵の利用規約。サービスのご利用条件についてご説明します。',
 }
 
 export default function TermsPage() {
   return (
     <div className="min-h-screen bg-[#f8f9fa] text-[#191c1d] font-sans antialiased">
-      <header className="sticky top-0 z-50 w-full bg-[#F8F9FA] border-b border-[#E1E4E8]">
-        <div className="flex justify-between items-center max-w-[800px] mx-auto w-full px-6 py-4">
-          <Link href="/" className="text-xl font-bold tracking-widest text-[#1A2B3C]">
-            LUMINA FINANCE
-          </Link>
-          <Link
-            href="/sign-in"
-            className="font-serif font-medium tracking-tight text-[#1A2B3C] hover:text-[#008080] transition-colors duration-300"
-          >
-            ログイン
-          </Link>
-        </div>
-      </header>
+      <PublicHeader />
 
       <main className="max-w-[800px] mx-auto px-6 py-12 md:py-16">
         <h1 className="font-serif text-3xl md:text-4xl font-bold tracking-tight text-[#191c1d] mb-8">
@@ -33,7 +22,7 @@ export default function TermsPage() {
           <section>
             <h2 className="font-serif text-xl font-semibold text-[#191c1d] mb-3">1. サービスの概要</h2>
             <p>
-              Lumina Finance（以下「本サービス」）は、AI技術を活用した金融教育プラットフォームです。
+              ウド知恵（以下「本サービス」）は、AI技術を活用した金融教育プラットフォームです。
               株式分析、ポートフォリオ管理、市場分析に関する教育コンテンツを提供します。
               本サービスは教育目的のみであり、投資助言や金融商品の推奨を目的とするものではありません。
             </p>
@@ -129,11 +118,7 @@ export default function TermsPage() {
         </div>
       </main>
 
-      <footer className="bg-[#1A2B3C] border-t border-[#2D3748]">
-        <div className="max-w-[800px] mx-auto px-6 py-8 text-center">
-          <div className="text-xs text-[#94A3B8]">© 2025 Lumina Finance. All rights reserved.</div>
-        </div>
-      </footer>
+      <PublicFooter />
     </div>
   )
 }

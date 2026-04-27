@@ -9,8 +9,8 @@ import { ConfettiProvider } from '@/components/providers'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'LMS (Learning Management System)',
-  description: 'LMS (Learning Management System)',
+  title: 'ウド知恵 - AI金融教育プラットフォーム',
+  description: 'AIを活用した金融教育プラットフォーム。体系的な金融コースとAI学習アシスタントで、投資の基礎から応用まで段階的に学べます。',
 }
 
 // @clerk/localizations type mismatch with @clerk/nextjs - runtime is compatible
