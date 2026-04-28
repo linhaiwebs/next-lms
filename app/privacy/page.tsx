@@ -55,8 +55,7 @@ export default function PrivacyPage() {
             <h2 className="font-serif text-xl font-semibold text-[#191c1d] mb-3">4. 情報の保護</h2>
             <p>
               当社は、お客様の個人情報を保護するため、業界標準の暗号化技術（SSL/TLS）を利用し、
-              安全なサーバー環境でデータを管理しています。また、従業員のアクセス権限を最小限に制限し、
-              定期的なセキュリティ監査を実施しています。
+              安全なサーバー環境でデータを管理しています。また、従業員のアクセス権限を最小限に制限しています。
             </p>
           </section>
 

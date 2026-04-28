@@ -109,6 +109,37 @@ export default function TermsPage() {
               本利用規約に関するご質問は、<Link href="/contact" className="text-[#006a6a] hover:underline">お問い合わせページ</Link>よりご連絡ください。
             </p>
           </section>
+
+          <section id="commercial" className="pt-8">
+            <h2 className="font-serif text-2xl font-semibold text-[#191c1d] mb-6 border-t border-[#e1e3e4] pt-8">特定商取引法に基づく表記</h2>
+            <div className="bg-[#f8f9fa] border border-[#e1e3e4] rounded-lg overflow-hidden">
+              <table className="w-full text-sm">
+                <tbody>
+                  {[
+                    { label: '販売業者', value: 'ウド知恵株式会社' },
+                    { label: '代表者', value: '代表取締役' },
+                    { label: '所在地', value: '東京都' },
+                    { label: '電話番号', value: 'お問い合わせページよりご連絡ください' },
+                    { label: 'メールアドレス', value: 'support@udochie.jp' },
+                    { label: '販売価格', value: 'フリープラン：無料／スタンダード：月額¥2,980（税込）／プロフェッショナル：月額¥5,980（税込）' },
+                    { label: '価格以外の必要料金', value: '通信料はお客様のご負担となります' },
+                    { label: '支払方法', value: 'クレジットカード（Visa、Mastercard、American Express）、デビットカード' },
+                    { label: '支払時期', value: 'サブスクリプションは毎月の自動更新により請求されます。無料トライアル期間終了後に最初の課金が行われます。' },
+                    { label: '無料トライアル', value: 'スタンダード・プロフェッショナルプランは7日間の無料トライアル付き。トライアル期間中の解約であれば料金はかかりません。トライアル終了後に自動的に課金が開始されます。' },
+                    { label: '返金について', value: 'ご利用開始後14日以内であれば、理由を問わず全額返金に対応します。お問い合わせページよりご連絡ください。' },
+                    { label: '引き渡し時期', value: 'オンラインサービスのため、登録完了後直ちにご利用いただけます。' },
+                    { label: 'サービスの提供期間', value: 'サブスクリプションは解約されるまで自動更新されます。解約後は現在の課金期間の終了までサービスをご利用いただけます。' },
+                    { label: '解約方法', value: 'アカウント設定の「サブスクリプション管理」からいつでも解約可能です。' },
+                  ].map((row, i) => (
+                    <tr key={i} className="border-b border-[#f0f0f0] last:border-0">
+                      <td className="py-3 px-6 bg-[#f8f9fa] font-medium text-[#191c1d] w-1/3 align-top">{row.label}</td>
+                      <td className="py-3 px-6 text-[#44474c]">{row.value}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          </section>
         </div>
 
         <div className="mt-12 pt-8 border-t border-[#c4c6cd]">

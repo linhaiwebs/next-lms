@@ -18,7 +18,7 @@ export default function PricingPage() {
           <span className="font-manrope text-[10px] font-bold tracking-widest uppercase text-[#76d6d5] block mb-3">料金プラン</span>
           <h1 className="font-serif text-3xl md:text-4xl font-bold mb-4">シンプルな料金体系</h1>
           <p className="text-base text-[#94A3B8] max-w-2xl leading-relaxed">
-            学習スタイルに合わせてプランを選べます。どのプランも7日間の無料トライアル付き。いつでもキャンセル可能です。
+            学習スタイルに合わせてプランを選べます。スタンダード・プロフェッショナルは7日間の無料トライアル付き。トライアル終了後に自動課金、いつでもキャンセル可能です。
           </p>
         </div>
       </section>
@@ -104,14 +104,13 @@ export default function PricingPage() {
               <span className="text-4xl font-bold text-[#af8c47]">¥5,980</span>
               <span className="text-sm text-[#5F6368]">/月</span>
             </div>
-            <ul className="space-y-3 mb-8 flex-grow">
+            <ul className="space-y-3 mb-4 flex-grow">
               {[
                 'スタンダードの全機能',
                 '上級コースへの先行アクセス',
-                '1対1の学習相談（月2回）',
-                '企業価値評価ツール',
+                '1対1の学習相談（月2回）※',
+                '企業価値評価テンプレート',
                 '詳細な学習分析レポート',
-                'API連携機能',
                 '専任サポート担当',
               ].map((item, i) => (
                 <li key={i} className="flex items-center gap-2 text-sm text-[#44474c]">
@@ -122,6 +121,7 @@ export default function PricingPage() {
                 </li>
               ))}
             </ul>
+            <p className="text-[10px] text-[#74777d] mb-4">※ 1対1学習相談はオンラインセッション形式で実施</p>
             <Link
               href="/sign-up"
               className="block w-full py-3 border border-[#af8c47] text-[#af8c47] text-center font-manrope text-xs font-bold tracking-widest uppercase rounded hover:bg-[#af8c47]/10 transition-colors"
@@ -154,7 +154,7 @@ export default function PricingPage() {
                   { feature: 'ケーススタディ', free: '—', standard: '○', pro: '○' },
                   { feature: '進捗ダッシュボード', free: '○', standard: '○', pro: '○ + 詳細レポート' },
                   { feature: '月次セッション', free: '—', standard: '○', pro: '○ + 1対1相談' },
-                  { feature: '分析テンプレート', free: '—', standard: '○', pro: '○ + 評価ツール' },
+                  { feature: '分析テンプレート', free: '—', standard: '○', pro: '○ + 評価テンプレート' },
                   { feature: '証明書発行', free: '—', standard: '○', pro: '○' },
                   { feature: 'サポート', free: 'コミュニティ', standard: '優先', pro: '専任担当' },
                 ].map((row, i) => (

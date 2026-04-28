@@ -4,7 +4,7 @@ import { PublicHeader, PublicFooter } from '@/components/public'
 
 export const metadata: Metadata = {
   title: 'ウド知恵 - AI金融教育プラットフォーム',
-  description: 'AI学習アシスタントと体系的な金融コース。株式分析の基礎から応用まで、自分のペースで段階的に学べる学習パス。',
+  description: 'AI学習アシスタントと体系的な金融コース。株式分析の基礎から応用まで、自分のペースで段階的に学べる学習パス。投資助言ではありません。',
 }
 
 export default function HomePage() {
@@ -68,8 +68,8 @@ export default function HomePage() {
               <div className="absolute bottom-6 left-6 right-6 bg-white/80 backdrop-blur-xl border border-white/20 p-4 md:p-6 rounded-lg">
                 <div className="flex justify-between items-end">
                   <div>
-                    <span className="font-manrope text-[10px] font-bold tracking-widest uppercase text-[#1a2b3c] block mb-1">AIインサイト</span>
-                    <span className="text-sm text-[#191c1d] font-medium">テクノロジーセクターの分析視点を提示。ボラティリティ指標の変動を検出。</span>
+                    <span className="font-manrope text-[10px] font-bold tracking-widest uppercase text-[#1a2b3c] block mb-1">AI学習サポート</span>
+                    <span className="text-sm text-[#191c1d] font-medium">学習進捗に応じて復習ポイントを自動検出。理解度に合わせた学習パスを提案。</span>
                   </div>
                   <svg className="w-6 h-6 text-[#006a6a] flex-shrink-0 ml-4" fill="currentColor" viewBox="0 0 24 24">
                     <path d="M3,13 L9,13 L9,3 L3,3 L3,13 Z M3,21 L9,21 L9,15 L3,15 L3,21 Z M11,21 L17,21 L17,9 L11,9 L11,21 Z M19,3 L19,21 L21,21 L21,3 L19,3 Z" />
@@ -151,8 +151,8 @@ export default function HomePage() {
           {[
             { num: '40+', label: '学習モジュール' },
             { num: '1,000+', label: '登録受講者' },
-            { num: '92%', label: '学習満足度' },
-            { num: '24/7', label: 'AIサポート' },
+            { num: '92%', label: '学習満足度（アンケート調査）' },
+            { num: '24/7', label: 'AI学習サポート' },
           ].map((stat, i) => (
             <div key={i} className="text-center py-6">
               <div className="text-3xl md:text-4xl font-bold text-[#006a6a] mb-1">{stat.num}</div>
@@ -160,6 +160,7 @@ export default function HomePage() {
             </div>
           ))}
         </div>
+        <p className="text-center text-xs text-[#74777d] mt-2">※ 登録受講者数は2026年3月時点。満足度はサービス内アンケート調査に基づきます。</p>
       </section>
 
       {/* Course Preview */}

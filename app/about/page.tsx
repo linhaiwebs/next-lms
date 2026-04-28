@@ -41,7 +41,7 @@ export default function AboutPage() {
               {[
                 { label: 'アクセシビリティ', desc: '場所や時間を問わず、誰もが学べる環境を提供' },
                 { label: 'パーソナライズ', desc: 'AIにより一人ひとりに最適な学習体験を実現' },
-                { label: '実践重視', desc: '実際の市場データを使ったケーススタディで実践力を育成' },
+                { label: '実践重視', desc: '実際の市場データを題材としたケーススタディで実践力を育成' },
                 { label: '継続サポート', desc: '学習の途中で挫折しないよう、AIが伴走' },
               ].map((item, i) => (
                 <div key={i} className="flex gap-4">

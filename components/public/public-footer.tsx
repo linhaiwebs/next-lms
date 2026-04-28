@@ -11,7 +11,7 @@ export function PublicFooter() {
             <p className="text-sm text-[#94A3B8] mb-6 leading-relaxed">
               AIと体系的学習で、金融知識の習得をサポートする教育プラットフォーム。
             </p>
-            <div className="text-xs text-[#94A3B8]">© 2025 ウド知恵. All rights reserved.</div>
+            <div className="text-xs text-[#94A3B8]">© 2026 ウド知恵. All rights reserved.</div>
           </div>
 
           {/* Platform */}
@@ -54,7 +54,7 @@ export function PublicFooter() {
 
         {/* Disclaimer */}
         <div className="mt-12 pt-8 border-t border-[#2D3748]">
-          <p className="text-[10px] text-[#64748B] leading-relaxed max-w-4xl">
+          <p className="text-xs text-[#94A3B8] leading-relaxed max-w-4xl">
             ※ 本サービスは金融教育を目的としており、投資助言や金融商品の推奨を行うものではありません。投資に関する決定はご自身の判断と責任で行ってください。過去の実績は将来の成果を保証するものではありません。株式投資にはリスクが伴います。
           </p>
         </div>

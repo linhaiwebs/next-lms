@@ -4,7 +4,7 @@ import { PublicHeader, PublicFooter } from '@/components/public'
 
 export const metadata: Metadata = {
   title: 'AI機能 | ウド知恵',
-  description: 'アダプティブラーニング、AI学習アシスタント、進捗ダッシュボードなど、ウド知恵の学習を支えるAI機能をご紹介。',
+  description: 'アダプティブラーニング、AI学習アシスタント、進捗ダッシュボードなど、ウド知恵の学習を支えるAI機能をご紹介。投資助言ではありません。',
 }
 
 export default function FeaturesPage() {
@@ -18,7 +18,7 @@ export default function FeaturesPage() {
           <span className="font-manrope text-[10px] font-bold tracking-widest uppercase text-[#76d6d5] block mb-3">AI機能</span>
           <h1 className="font-serif text-3xl md:text-4xl font-bold mb-4">学習を加速するAIテクノロジー</h1>
           <p className="text-base text-[#94A3B8] max-w-2xl leading-relaxed">
-            ウド知恵はAI技術を教育に活用し、一人ひとりの学習者に最適な学習体験を提供します。アダプティブラーニングからリアルタイムサポートまで、多彩な機能で学びを支えます。
+            ウド知恵はAI技術を教育に活用し、一人ひとりの学習者に最適な学習体験を提供します。アダプティブラーニングから学習サポートまで、多彩な機能で学びを支えます。
           </p>
         </div>
       </section>
@@ -30,14 +30,14 @@ export default function FeaturesPage() {
           {[
             {
               title: 'AIアダプティブラーニング',
-              desc: '学習進捗と理解度をAIがリアルタイムに分析し、コースの難易度や学習パスを自動調整。無理なく効率的に学べるよう、一人ひとりに最適な学習体験を提供します。',
+              desc: '学習進捗と理解度をAIが分析し、コースの難易度や学習パスを自動調整。無理なく効率的に学べるよう、一人ひとりに最適な学習体験を提供します。',
               details: ['理解度に応じた自動難易度調整', '弱点分野の自動検出と復習提案', '学習ペースの最適化', 'カスタマイズされた学習プラン'],
               icon: '🧠',
             },
             {
               title: 'AI学習アシスタント',
-              desc: '24時間利用可能なAIアシスタントが、学習中の疑問に即座にお答えします。金融用語の解説から計算問題のヒントまで、学習を妨げないタイミングでサポート。',
-              details: ['24時間365日対応', '金融専門用語の即時解説', '段階的なヒント提供', 'コンテキストを理解した回答'],
+              desc: 'AIアシスタントが学習中の疑問にお答えします。金融用語の解説から計算問題のヒントまで、学習を妨げないタイミングでサポート。',
+              details: ['AIによる自動応答', '金融専門用語の即時解説', '段階的なヒント提供', 'コンテキストを理解した回答'],
               icon: '🤖',
             },
             {
@@ -47,9 +47,9 @@ export default function FeaturesPage() {
               icon: '📊',
             },
             {
-              title: 'マーケットデータ連携',
-              desc: 'リアルタイムの市場データと連動した学習コンテンツで、実践的な知識を習得。実際の市場動向を使った演習問題やケーススタディを提供します。',
-              details: ['リアルタイムデータとの連動', '実践的なケーススタディ', '市場シミュレーション演習', 'ニュース連動型コンテンツ'],
+              title: 'マーケットデータ解説',
+              desc: '市場データを参考情報として活用した学習コンテンツで、実践的な知識を習得。実際の市場動向を題材とした演習問題やケーススタディを提供します。',
+              details: ['市場データを活用した学習', '実践的なケーススタディ', '市場動向を題材とした演習', 'ニュース解説型コンテンツ'],
               icon: '📈',
             },
           ].map((feature, i) => (
@@ -112,7 +112,7 @@ export default function FeaturesPage() {
                 業界標準のSSL/TLS暗号化でデータを保護。学習データや個人情報は安全なサーバー環境で管理され、従業員のアクセス権限は最小限に制限されています。
               </p>
               <div className="flex flex-wrap gap-4">
-                {['SSL/TLS暗号化', 'アクセス権限制御', '定期セキュリティ監査', 'プライバシー保護'].map((item, i) => (
+                {['SSL/TLS暗号化', 'アクセス権限制御', 'プライバシー保護'].map((item, i) => (
                   <span key={i} className="text-xs text-[#006a6a] bg-[#006a6a]/10 px-3 py-1 rounded-full">{item}</span>
                 ))}
               </div>

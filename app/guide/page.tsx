@@ -129,7 +129,7 @@ export default function GuidePage() {
         <div className="bg-[#f8f9fa] border border-[#e1e3e4] rounded-lg p-8 md:p-10 text-center">
           <h2 className="font-serif text-2xl font-semibold text-[#191c1d] mb-3">学習に不安がありますか？</h2>
           <p className="text-sm text-[#44474c] max-w-lg mx-auto mb-6 leading-relaxed">
-            AIアシスタントが24時間サポート。さらに、コミュニティで他の学習者と交流したり、FAQで疑問を解消したりできます。
+            AIアシスタントが学習をサポート。さらに、コミュニティで他の学習者と交流したり、FAQで疑問を解消したりできます。
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link href="/faq" className="text-sm text-[#006a6a] font-medium hover:underline">よくある質問を見る</Link>

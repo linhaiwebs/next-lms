@@ -3,7 +3,7 @@ import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
   title: 'ウド知恵 - AI株式教育プラットフォーム',
-  description: 'AIを活用した株式教育プラットフォーム。体系的な金融コースとAI学習アシスタントで、投資の基礎から応用まで段階的に学べます。',
+  description: 'AIを活用した金融教育プラットフォーム。体系的な金融コースとAI学習アシスタントで、投資の基礎から応用まで段階的に学べます。投資助言ではありません。',
 }
 
 export default function LandingPage() {
@@ -61,7 +61,7 @@ export default function LandingPage() {
             <div className="flex items-center gap-2">
               <div className="w-2 h-2 rounded-full bg-[#00E676] animate-pulse" />
               <span className="font-manrope text-[10px] font-bold tracking-widest uppercase text-[#00E676]">
-                AIマーケット分析
+                AI学習サポート
               </span>
             </div>
           </div>
@@ -88,15 +88,15 @@ export default function LandingPage() {
                 </circle>
               </svg>
             </div>
-            {/* Stock Info */}
+            {/* Learning Info */}
             <div className="flex justify-between items-center">
               <div>
-                <div className="text-sm font-semibold">AAPL</div>
-                <div className="text-xs text-[#94A3B8]">Apple Inc.</div>
+                <div className="text-sm font-semibold">学習進捗</div>
+                <div className="text-xs text-[#94A3B8]">ファンダメンタルズ分析</div>
               </div>
               <div className="text-right">
-                <div className="text-sm font-semibold text-[#00E676]">+2.34%</div>
-                <div className="text-xs text-[#94A3B8]">$189.42</div>
+                <div className="text-sm font-semibold text-[#00E676]">8/12 完了</div>
+                <div className="text-xs text-[#94A3B8]">モジュール進捗</div>
               </div>
             </div>
           </div>
@@ -107,7 +107,7 @@ export default function LandingPage() {
                 <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" />
               </svg>
               <span className="text-xs text-[#00E676]">
-                AIがテクノロジーセクターの分析視点を提示、ボラティリティ指標の変動を検出
+                AIが復習すべきポイントを自動検出。理解度に応じて学習パスを最適化します。
               </span>
             </div>
           </div>
@@ -127,8 +127,8 @@ export default function LandingPage() {
             },
             {
               icon: '📊',
-              title: 'リアルタイム市場分析',
-              desc: 'グローバル金融市場のトレンド変化をタイムリーにお届けし、学習の参考情報として活用できます。',
+              title: 'マーケットデータ解説',
+              desc: 'グローバル金融市場のトレンド変化を学習の参考情報としてお届け。教育目的の市場解説コンテンツを提供します。',
               color: '#b0c6ff',
             },
             {
@@ -163,20 +163,13 @@ export default function LandingPage() {
       {/* Social Proof */}
       <section className="px-5 mb-12">
         <div className="bg-gradient-to-br from-[#1a2027] to-[#0e141a] border border-white/10 rounded-2xl p-6 text-center">
-          <div className="flex justify-center gap-1 mb-4">
-            {[1, 2, 3, 4, 5].map((star) => (
-              <svg key={star} className="w-5 h-5 text-[#ffe37a]" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
-              </svg>
-            ))}
-          </div>
           <div className="text-3xl font-bold mb-1">1,000+</div>
           <div className="text-sm text-[#94A3B8] mb-4">登録受講者</div>
           <div className="grid grid-cols-3 gap-4">
             {[
-              { num: '50+', label: '学習コース' },
-              { num: '92%', label: '満足度' },
-              { num: '24/7', label: 'AIサポート' },
+              { num: '40+', label: '学習モジュール' },
+              { num: '92%', label: '満足度（調査）' },
+              { num: '24/7', label: 'AI学習サポート' },
             ].map((stat, i) => (
               <div key={i} className="text-center">
                 <div className="text-lg font-bold text-[#00E676]">{stat.num}</div>
@@ -184,24 +177,25 @@ export default function LandingPage() {
               </div>
             ))}
           </div>
+          <p className="text-[9px] text-[#94A3B8] mt-3">※ 登録受講者数は2026年3月時点。満足度はサービス内アンケート調査に基づきます。</p>
         </div>
       </section>
 
       {/* Testimonial */}
       <section className="px-5 mb-12">
-        <div className="bg-[#1a2027] border-l-2 border-l-[#00E676] border-r border-t border-b border-r-white/5 border-t-white/5 border-b-white/5 rounded-r-xl p-5">
-          <p className="text-sm text-[#dde3ec] leading-relaxed mb-4 italic">
-            &ldquo;ウド知恵のAI学習アシスタントが効率的な学習をサポートしてくれました。体系的なコースで投資の基礎から応用まで無理なく学べました。&rdquo;
-          </p>
-          <div className="flex items-center gap-3">
-            <div className="w-8 h-8 rounded-full bg-[#00E676]/20 flex items-center justify-center">
-              <span className="text-xs font-bold text-[#00E676]">TY</span>
-            </div>
-            <div>
-              <div className="text-xs font-semibold">田中悠太</div>
-              <div className="text-[10px] text-[#94A3B8]">受講生</div>
-            </div>
+        <div className="bg-[#1a2027] border border-white/10 rounded-2xl p-6">
+          <div className="flex items-center gap-2 mb-4">
+            <svg className="w-5 h-5 text-[#00E676]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+            <span className="text-sm font-semibold text-[#00E676]">教育サービスであること</span>
           </div>
+          <p className="text-sm text-[#dde3ec] leading-relaxed mb-3">
+            ウド知恵は金融知識の習得をサポートする教育プラットフォームです。投資助言や金融商品の推奨は行っておりません。
+          </p>
+          <p className="text-xs text-[#94A3B8] leading-relaxed">
+            ※ 投資に関する決定はご自身の判断と責任で行ってください。過去の実績は将来の成果を保証するものではありません。
+          </p>
         </div>
       </section>
 
@@ -217,7 +211,7 @@ export default function LandingPage() {
             <p className="text-xs text-[#94A3B8]">全コースアクセス ・ AI学習サポート付き</p>
           </div>
           <div className="mb-6">
-            <span className="text-4xl font-bold text-[#00E676]">$85</span>
+            <span className="text-4xl font-bold text-[#00E676]">¥2,980</span>
             <span className="text-sm text-[#94A3B8]">/月</span>
           </div>
           <ul className="space-y-3 mb-6">
@@ -236,7 +230,7 @@ export default function LandingPage() {
           >
             スタンダードプランで始める →
           </Link>
-          <p className="text-center text-[10px] text-[#94A3B8] mt-3">7日間無料トライアル ・ いつでもキャンセル可</p>
+          <p className="text-center text-[10px] text-[#94A3B8] mt-3">7日間無料トライアル ・ いつでもキャンセル可 ・ トライアル終了後に自動課金</p>
         </div>
       </section>
 
@@ -265,13 +259,16 @@ export default function LandingPage() {
       <footer className="border-t border-white/5 px-5 py-8">
         <div className="flex justify-between items-center">
           <span className="text-sm font-bold tracking-widest text-[#00E676]">ウド知恵</span>
-          <span className="text-[10px] text-[#94A3B8]">© 2025 ウド知恵</span>
+          <span className="text-[10px] text-[#94A3B8]">© 2026 ウド知恵</span>
         </div>
         <div className="flex justify-center gap-6 mt-4">
           <Link href="/privacy" className="text-xs text-[#94A3B8] hover:text-[#00E676] transition-colors">プライバシーポリシー</Link>
           <Link href="/terms" className="text-xs text-[#94A3B8] hover:text-[#00E676] transition-colors">利用規約</Link>
           <Link href="/contact" className="text-xs text-[#94A3B8] hover:text-[#00E676] transition-colors">お問い合わせ</Link>
         </div>
+        <p className="text-[11px] text-[#94A3B8] mt-4 text-center leading-relaxed">
+          ※ 本サービスは金融教育を目的としており、投資助言や金融商品の推奨を行うものではありません。投資に関する決定はご自身の判断と責任で行ってください。過去の実績は将来の成果を保証するものではありません。
+        </p>
       </footer>
     </div>
   )
